@@ -203,6 +203,13 @@ textarea {
 /*END RESET CSS*/
 
 /*START BASIC*/
+  
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url(../fonts/Montserrat-Black.ttf) format('ttf');
+}
 
 html {
     box-sizing: border-box
@@ -218,11 +225,12 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em; 
+    letter-spacing: 0em;
 }
 
 .wrapper {
     width: 1440px;
+    margin: 0 auto;
 }
 
 /*END BASIC*/
@@ -251,22 +259,45 @@ body {
 
 .header-nav__point {
     padding: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .header-nav__point>a {
     text-decoration: none;
-    color: rgba(31, 32, 65, 0, 5);
+    color: rgba(131, 32, 65, 0, 5);
 }
 
 .header-buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .header-buttons__enter {
-    padding: 20px;
-    
+    margin-right: 20px;
+    color: rgba(188, 156, 255, 1);
+    border: 2px solid rgba(188, 156, 255, 1);
+    border-radius: 22px;
+    padding: 9px 20px;
+}
+
+.header-buttons__login {
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1));
+    border: 2px solid none;
+    border-radius: 22px;
+    padding: 9px 20px;
 }
 
 /*END HEADER*/
